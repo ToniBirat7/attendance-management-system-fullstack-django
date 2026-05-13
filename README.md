@@ -71,7 +71,7 @@ Open `http://127.0.0.1:8000/` in your browser.
 - `/auth/login/` – Login
 - `/auth/admin-page/` – Admin dashboard
 - `/attendance/logged-in/` – Teacher course list
-- `/calendar/display-calendar/1` – Calendar view for course 1 (no trailing slash; Django route `display-calendar/<int:course_id>`)
+- `/calendar/display-calendar/1` – Calendar view for course 1 (trailing slash not required; route is defined as `display-calendar/<int:course_id>` without a trailing slash)
 
 ## Tests
 Run the test suite:
