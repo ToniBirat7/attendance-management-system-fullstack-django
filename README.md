@@ -67,7 +67,7 @@ Open `http://127.0.0.1:8000/` in your browser.
 - `/auth/login/` – Login
 - `/auth/admin-page/` – Admin dashboard
 - `/attendance/logged-in/` – Teacher course list
-- `/calendar/display-calendar/{course_id}` – Calendar view (course_id is an integer; corresponds to Django route `display-calendar/<int:course_id>`)
+- `/calendar/display-calendar/1` – Calendar view for course 1 (course_id is an integer; Django route `display-calendar/<int:course_id>`)
 
 ## Tests
 Run the test suite:
