@@ -67,7 +67,7 @@ Open `http://127.0.0.1:8000/` in your browser.
 - `/auth/login/` – Login
 - `/auth/admin-page/` – Admin dashboard
 - `/attendance/logged-in/` – Teacher course list
-- `/calendar/display-calendar/<course_id>` – Calendar view
+- `/calendar/display-calendar/<course_id>` – Calendar view (course_id is an integer)
 
 ## Tests
 Run the test suite:
