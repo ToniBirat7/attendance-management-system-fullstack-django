@@ -83,7 +83,7 @@ python manage.py test
 - Default database is SQLite (`db.sqlite3`).
 - Uploaded media is stored in `/media`.
 - For production:
-  - Set `DEBUG=False`, configure `ALLOWED_HOSTS`, and keep `SECRET_KEY` secret (never commit it to version control).
+  - Set `DEBUG=False`, configure `ALLOWED_HOSTS`, and keep `SECRET_KEY` secret (never commit `SECRET_KEY` to version control).
   - Use a production-ready database (e.g., PostgreSQL) instead of SQLite.
   - Configure static file hosting (`collectstatic`) and media storage.
   - Serve the app over HTTPS.
