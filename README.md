@@ -67,7 +67,7 @@ Open `http://127.0.0.1:8000/` in your browser.
 - `/auth/login/` – Login
 - `/auth/admin-page/` – Admin dashboard
 - `/attendance/logged-in/` – Teacher course list
-- `/calendar/display-calendar/<course_id>` – Calendar view (course_id is an integer)
+- `/calendar/display-calendar/{course_id}` – Calendar view (course_id is an integer; corresponds to Django route `display-calendar/<int:course_id>`)
 
 ## Tests
 Run the test suite:
@@ -78,4 +78,4 @@ python manage.py test
 ## Notes
 - Default database is SQLite (`db.sqlite3`).
 - Uploaded media is stored in `/media`.
-- For production, configure `SECRET_KEY`, `DEBUG`, and `ALLOWED_HOSTS` in `ams/settings.py`.
+- For production, set `DEBUG=False`, configure `ALLOWED_HOSTS`, and keep `SECRET_KEY` secret (never commit it to version control).
