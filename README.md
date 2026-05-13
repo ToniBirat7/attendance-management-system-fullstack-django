@@ -39,7 +39,7 @@ media/               Uploaded media (profile images)
    ```
    On Windows:
    ```
-   .venv\\Scripts\\activate
+   .venv\Scripts\activate
    ```
 2. Install dependencies:
    ```
@@ -82,5 +82,8 @@ python manage.py test
 ## Notes
 - Default database is SQLite (`db.sqlite3`).
 - Uploaded media is stored in `/media`.
-- For production, set `DEBUG=False`, configure `ALLOWED_HOSTS`, and keep `SECRET_KEY` secret (never commit it to version control).
-- For production, use a production-ready database (e.g., PostgreSQL), configure static file hosting (`collectstatic`) and media storage, and serve the app over HTTPS.
+- For production:
+  - Set `DEBUG=False`, configure `ALLOWED_HOSTS`, and keep `SECRET_KEY` secret (never commit it to version control).
+  - Use a production-ready database (e.g., PostgreSQL) instead of SQLite.
+  - Configure static file hosting (`collectstatic`) and media storage.
+  - Serve the app over HTTPS.
