@@ -37,6 +37,10 @@ media/               Uploaded media (profile images)
    python -m venv .venv
    source .venv/bin/activate
    ```
+   On Windows:
+   ```
+   .venv\\Scripts\\activate
+   ```
 2. Install dependencies:
    ```
    pip install -r requirements.txt
@@ -67,7 +71,7 @@ Open `http://127.0.0.1:8000/` in your browser.
 - `/auth/login/` – Login
 - `/auth/admin-page/` – Admin dashboard
 - `/attendance/logged-in/` – Teacher course list
-- `/calendar/display-calendar/1` – Calendar view for course 1 (course_id is an integer; Django route `display-calendar/<int:course_id>`)
+- `/calendar/display-calendar/1` – Calendar view for course 1 (no trailing slash; Django route `display-calendar/<int:course_id>`)
 
 ## Tests
 Run the test suite:
